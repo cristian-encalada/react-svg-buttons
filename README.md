@@ -56,4 +56,4 @@ Updated to support React 18.x.x:
 
 
 [npm-image]: https://img.shields.io/npm/v/react-svg-buttons.svg?style=flat-square
-[npm-url]:   https://www.npmjs.org/package/react-svg-buttons
+[npm-url]:   https://www.npmjs.com/package/react-svg-buttons-improved
