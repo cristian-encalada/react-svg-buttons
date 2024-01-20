@@ -1,12 +1,12 @@
 {
   "name": "react-svg-buttons-improved",
   "description": "Configurable animated SVG buttons for react, update of react-svg-buttons",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "main": "lib",
   "author": "Raphaël Benitte",
   "maintainers": [
-      "plouc",
-      "cristian-encalada"
+    "plouc",
+    "cristian-encalada"
   ],
   "license": "MIT",
   "repository": {
