@@ -9,13 +9,13 @@ The `<MorphIcon />` component exposes 18 icon types.
 
 It also provides a set of button components.
 
-Please, take a look at the [demo](http://plouc.github.io/react-svg-buttons/).
+Please, take a look at the [demo](http://cristian-encalada.github.io/react-svg-buttons-improved/).
 
 
 ## Installation
 
 ```
-npm install --save react-svg-buttons
+npm install react-svg-buttons
 ```
 
 ## Usage
@@ -43,7 +43,17 @@ render(<Demo />, document.getElementById('demo'))
 
 ## License
 
-MIT. Copyright (c) 2015 Raphaël Benitte.
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details.
+
+Original work:
+
+- **[react-svg-buttons](https://github.com/original-author/react-svg-buttons)**
+  - MIT. Copyright (c) 2015 Raphaël Benitte.
+
+Updated to support React 18.x.x:
+- **[react-svg-buttons-improved](https://github.com/cristian-encalada/react-svg-buttons-improved)**
+  - Copyright (c) 2024 Cristian Encalada
+
 
 [npm-image]: https://img.shields.io/npm/v/react-svg-buttons.svg?style=flat-square
 [npm-url]:   https://www.npmjs.org/package/react-svg-buttons
