@@ -11,10 +11,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/plouc/react-svg-buttons.git"
+    "url": "git+https://github.com/cristian-encalada/react-svg-buttons-improved"
   },
   "bugs": {
-    "url": "https://github.com/plouc/react-svg-buttons/issues"
+    "url": "https://github.com/cristian-encalada/react-svg-buttons-improved/pulls"
   },
   "scripts": {
     "build": "NODE_ENV=production rm -rf lib/* && babel src --no-comments --out-dir lib",
