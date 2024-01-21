@@ -1,5 +1,5 @@
 {
-  "name": "react-svg-buttons-v18",
+  "name": "@devbug/react-svg-buttons",
   "description": "Configurable animated SVG buttons for react, update of react-svg-buttons",
   "version": "0.5.0",
   "main": "lib",
@@ -11,10 +11,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cristian-encalada/react-svg-buttons-improved"
+    "url": "git+https://github.com/cristian-encalada/react-svg-buttons.git"
   },
   "bugs": {
-    "url": "https://github.com/cristian-encalada/react-svg-buttons-improved/pulls"
+    "url": "https://github.com/cristian-encalada/react-svg-buttons/pulls"
   },
   "scripts": {
     "build": "NODE_ENV=production rm -rf lib/* && babel src --no-comments --out-dir lib",

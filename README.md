@@ -2,7 +2,7 @@
 
 [![Version][npm-image]][npm-url]
 
-![React SVG buttons](https://raw.githubusercontent.com/cristian-encalada/react-svg-buttons-improved/main/demo/public/react-svg-buttons.gif)
+![React SVG buttons](https://raw.githubusercontent.com/cristian-encalada/react-svg-buttons/main/demo/public/react-svg-buttons.gif)
 
 This package provides a `<MorphIcon />` component used to compose available buttons,
 it's able to morph from whatever icon type to another one.
@@ -11,13 +11,13 @@ The `<MorphIcon />` component exposes 18 icon types.
 
 It also provides a set of button components.
 
-Please, take a look at the [demo](http://cristian-encalada.github.io/react-svg-buttons-improved/).
+Please, take a look at the [demo](http://cristian-encalada.github.io/react-svg-buttons/).
 
 
 ## Installation
 
 ```
-npm install react-svg-buttons-v18
+npm install @devbug/react-svg-buttons
 ```
 
 ## Usage
@@ -31,7 +31,7 @@ __Morphing onClick__
 ```js
 // MorphingButtonClick.jsx
 import { useState } from 'react';
-import { MorphIcon } from 'react-svg-buttons-v18';
+import { MorphIcon } from '@devbug/react-svg-buttons';
 
 const MorphingButtonClick = () => {
   const [iconType, setIconType] = useState('home');
@@ -55,7 +55,7 @@ __Morphing onMouseEnter/onMouseLeave__
 ```js
 // MorphingButtonHover.jsx
 import { useState } from 'react';
-import { MorphIcon } from 'react-svg-buttons-v18';
+import { MorphIcon } from '@devbug/react-svg-buttons';
 
 const MorphingButtonHover = () => {
   const [iconType, setIconType] = useState('home');
@@ -87,7 +87,7 @@ import MorphingButtonHover from './components/MorphingButtonHover'
 import {
   MorphIcon,
   CloseButton
-} from 'react-svg-buttons-v18'
+} from '@devbug/react-svg-buttons'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -108,7 +108,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
 __Result:__
 
-![React SVG buttons](https://raw.githubusercontent.com/cristian-encalada/react-svg-buttons-improved/main/demo/public/react-svg-buttons.gif)
+![React SVG buttons](https://raw.githubusercontent.com/cristian-encalada/react-svg-buttons/main/demo/public/react-svg-buttons.gif)
 
 ## License
 
@@ -120,9 +120,9 @@ Original work:
   - MIT. Copyright (c) 2015 Raphaël Benitte.
 
 Updated to support React v18:
-- **[react-svg-buttons-improved](https://github.com/cristian-encalada/react-svg-buttons-improved)**
+- **[@devbug/react-svg-buttons](https://github.com/cristian-encalada/react-svg-buttons)**
   - Copyright (c) 2024 Cristian Encalada
 
 
-[npm-image]: https://img.shields.io/npm/v/react-svg-buttons-v18.svg?style=flat-square
-[npm-url]:   https://www.npmjs.com/package/react-svg-buttons-v18
+[npm-image]: https://img.shields.io/npm/v/@devbug/react-svg-buttons.svg?style=flat-square
+[npm-url]:   https://www.npmjs.com/package/@devbug/react-svg-buttons
