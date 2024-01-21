@@ -16,7 +16,7 @@ import {
     PlusButton,
     NavButton,
     PlayButton,
-} from './lib'
+} from 'react-svg-buttons-improved'
 
 const types = Object.keys(iconTypes)
 
@@ -71,13 +71,13 @@ export default class App extends Component {
                 <div className="strata sub-header">
                     <div className="strata_content">
                         <div className="sub-header_install">
-                            npm install --save react-svg-buttons
+                            npm install react-svg-buttons
                         </div>
                         <a
                             className="sub-header_github"
                             href="https://github.com/plouc/react-svg-buttons"
                         >
-                            view project on github
+                            View project on github (update for react v.18)
                         </a>
                     </div>
                 </div>
@@ -258,7 +258,7 @@ export default class App extends Component {
                 </div>
                 <div className="footer strata">
                     <div className="strata_content">
-                        Copyright &copy; Raphaël Benitte 2016. MIT Licensed.
+                        Copyright &copy; Cristian Encalada 2024. MIT Licensed.
                     </div>
                 </div>
             </div>
