@@ -1,9 +1,0 @@
-.idea
-node_modules
-demo-build
-/lib
-.publish
-.DS_Store
-npm-debug*
-/demo/build
-/demo/src/lib
