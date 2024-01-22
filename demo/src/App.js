@@ -16,7 +16,11 @@ import {
     PlusButton,
     NavButton,
     PlayButton,
-} from 'react-svg-buttons-improved'
+} from '@devbug/react-svg-buttons'
+
+import MorphingButtonClick from './components/MorphingButtonClick'
+import MorphingButtonHover from './components/MorphingButtonHover'
+
 
 const types = Object.keys(iconTypes)
 
@@ -50,6 +54,81 @@ export default class App extends Component {
     color="${color}"
 />`
 
+
+const click = `
+// MorphingButtonClick.jsx
+import { useState } from 'react';
+import { MorphIcon } from '@devbug/react-svg-buttons';
+
+const MorphingButtonClick = () => {
+  const [iconType, setIconType] = useState('home');
+
+  return (
+    <MorphIcon
+      type={iconType}
+      size={100}
+      thickness={2}
+      color="#dd6e78"
+      onClick={() => setIconType(iconType === 'home' ? 'thunderbolt' : 'home')}
+    />
+  );
+};
+
+export default MorphingButtonClick;
+`;
+
+const hover = `
+// MorphingButtonHover.jsx
+import { useState } from 'react';
+import { MorphIcon } from '@devbug/react-svg-buttons';
+
+const MorphingButtonHover = () => {
+  const [iconType, setIconType] = useState('home');
+
+  return (
+    <MorphIcon
+      type={iconType}
+      size={100}
+      thickness={2}
+      color="#dd6e78"
+      onMouseEnter={() => setIconType('thunderbolt')}
+      onMouseLeave={() => setIconType('home')}
+    />
+  );
+};
+
+export default MorphingButtonHover;
+`;
+
+const main = `
+// main.jsx
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import MorphingButtonClick from './components/MorphingButtonClick'
+import MorphingButtonHover from './components/MorphingButtonHover'
+
+import {
+  MorphIcon,
+  CloseButton
+} from '@devbug/react-svg-buttons'
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+       <div>
+        <MorphingButtonClick />
+        <MorphingButtonHover />
+        <MorphIcon
+            type="hashtag"
+            size={100}
+            thickness={2}
+            color="blue"
+        />
+        <CloseButton/>
+      </div>
+  </React.StrictMode>,
+)
+`;
+
         return (
             <div>
                 <div className="strata header">
@@ -71,7 +150,7 @@ export default class App extends Component {
                 <div className="strata sub-header">
                     <div className="strata_content">
                         <div className="sub-header_install">
-                            npm install react-svg-buttons
+                            npm i @devbug/react-svg-buttons
                         </div>
                         <a
                             className="sub-header_github"
@@ -252,6 +331,34 @@ export default class App extends Component {
                                         {code}
                                     </code>
                                 </pre>
+                            </div>
+                        </div>
+                        <div className="playground-2">
+                        <div className="playground_code">
+                                <h2 className="title">COMPONENTS EXAMPLE</h2>
+                                <pre>
+                                    <code>
+                                        {click}
+                                        <hr/>
+                                        {hover}
+                                        <hr/>
+                                        {main}
+                                    </code>
+                                </pre>
+                            </div>
+                            <div className="playground_preview">
+                                <h2 className="title">PREVIEW</h2>
+                                <div className="preview_grid">
+                                    <MorphingButtonClick />
+                                    <MorphingButtonHover />
+                                    <MorphIcon
+                                    type="hashtag"
+                                    size={100}
+                                    thickness={2}
+                                    color="blue"
+                                />
+                                <CloseButton/>
+                                </div>
                             </div>
                         </div>
                     </div>
